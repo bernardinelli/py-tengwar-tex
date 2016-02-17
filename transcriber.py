@@ -16,6 +16,7 @@ tengwar_equivalence = {"t" : "\Ttinco ", "p" : "\Tparma ", "c" : "\Tcalma ", "q"
 
 vowels = ["a", "e", "i", "o", "u"]
 
+accented_vowels = vowels +  ["á", "é", "í", "ó", "ú", "ë", "ä", "ö"]
 
 
 def replacer(text):
@@ -39,6 +40,10 @@ def replacer(text):
 		silme_nuquerna = "S" + vowels[i]
 		text = text.replace(silme, silme_nuquerna)
 
+	for i in range(0, len(accented_vowels)):
+		romen = "r" + accented_vowels[i]
+		romen_change = "R" + accented_vowels[i]
+		text = text.replace(romen, romen_change)
 	
 	return text[1:]
 
