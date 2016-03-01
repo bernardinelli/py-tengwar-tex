@@ -1,5 +1,5 @@
-''' PYngwar Transcriber version 0.1
-Jan 28, 2016
+''' PYngwar Transcriber version 0.2
+Mar 1, 2016
 Ondo Carniliono - Pedro Bernardinelli
 ondo@quenya101.com
 
